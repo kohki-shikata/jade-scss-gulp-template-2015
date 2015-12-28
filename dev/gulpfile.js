@@ -23,15 +23,15 @@ gulp.task('jade', function () {
 });
 
 var copy_js = [
-  'bower_components/swipebox/src/js/jquery.swipebox.min.js',
-  'bower_components/slick-carousel/slick/slick.min.js',
-  'bower_components/lightbox2/dist/js/lightbox.min.js',
+  // 'bower_components/swipebox/src/js/jquery.swipebox.min.js',
+  // 'bower_components/slick-carousel/slick/slick.min.js',
+  // 'bower_components/lightbox2/dist/js/lightbox.min.js',
 ];
 
 var copy_css = [
-  'bower_components/slick-carousel/slick/slick.css',
+  // 'bower_components/slick-carousel/slick/slick.css',
 //  'bower_components/slick-carousel/slick/slick-theme.css',
-  'bower_components/lightbox2/dist/css/lightbox.css'
+  // 'bower_components/lightbox2/dist/css/lightbox.css'
 ];
 
 gulp.task('copy', function () {
