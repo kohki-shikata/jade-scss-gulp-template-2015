@@ -1,0 +1,20 @@
+{
+  "name": "",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "kohki-shikata"
+  ],
+  "license": "MIT License",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

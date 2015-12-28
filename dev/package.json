@@ -1,0 +1,27 @@
+{
+  "name": "jade-sass-gulp-template",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kohki-shikata/jade-scss-gulp-template-2015.git"
+  },
+  "author": "kohki-shikata",
+  "license": "MIT License",
+  "homepage": "https://github.com/kohki-shikata/jade-scss-gulp-template-2015",
+  "devDependencies": {
+    "browser-sync": "~1.6.2",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-pleeease": "^2.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-webserver": "^0.9.1",
+    "jade": "^1.11.0"
+  }
+}
