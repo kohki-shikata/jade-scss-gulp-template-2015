@@ -8,6 +8,7 @@ var webserver = require('gulp-webserver');
 gulp.task('sass', function() {
   gulp.src(["scss/**/*.scss","!scss/**/_*.scss"])
     .pipe(plumber())
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("../common/css"));
@@ -23,15 +24,19 @@ gulp.task('jade', function () {
 });
 
 var copy_js = [
+/*
   'bower_components/swipebox/src/js/jquery.swipebox.min.js',
   'bower_components/slick-carousel/slick/slick.min.js',
   'bower_components/lightbox2/dist/js/lightbox.min.js',
+*/
 ];
 
 var copy_css = [
+/*
   'bower_components/slick-carousel/slick/slick.css',
-//  'bower_components/slick-carousel/slick/slick-theme.css',
+  'bower_components/slick-carousel/slick/slick-theme.css',
   'bower_components/lightbox2/dist/css/lightbox.css'
+*/
 ];
 
 gulp.task('copy', function () {
