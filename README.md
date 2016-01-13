@@ -5,15 +5,18 @@
 MIT License
 
 ## Requirements
-npm
-gulp
-bower (if you need to)
+* git
+* npm
+* gulp
+* bower (if you need to)
 
 ## Initial setup
 1. cd path/to/your_dirctory
 1. git clone https://github.com/kohki-shikata/jade-scss-gulp-template-2015.git
 1. cd dev
 1. npm install
+1. Set structured like below...
+1. gulp
 
 ## Set dirctory structure
 
@@ -95,6 +98,10 @@ This template is made for typical Japanese WEBSITE.
 1. Keep maintainability and modifierbility after deploy or delivered for the client.
 1. We often use this template for static html templates before CMS integration. In that case, concat and uglify is task for CMS.
 
+### Why do compile scss to css, in spite of not concat js?
+
+Quite simple. Browsers don't understand scss defaultly.
+
 ## Why not /dist directory ?
 
 Our process neccesity,
@@ -103,5 +110,3 @@ Our process neccesity,
 1. Paths inside HTML files must be started from site_root, like "/common/js/jquery.js".
 
 Happy coding!
-
->>>>>>> 9020cbb60ed47dffa68454fa7136900aacdfda8e
