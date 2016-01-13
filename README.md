@@ -111,6 +111,14 @@ Our process neccesity,
 1. Deploy to staging server with Git.
 1. Paths inside HTML files must be started from site_root, like "/common/js/jquery.js".
 
+## Preview
+
+1. Hit "gulp" at /dev/
+1. Go to brower and enter "localhost:7001"
+1. Preview will change when you save files under "/dev/jade/*" or "/dev/scss/*"
+
+### Doesn't 
+
 ## Use bower
 
 1. cd dev
@@ -133,9 +141,8 @@ Then, update gulpfile.js var copy_js, var copy_css
 
 This system for develop with multi developers. When someone do "bower install SOMETHING --save", the guy have to commit and push bower.json. Then other guys pull this bower.json, and do "bower update". This process need to maintain and keep frontend enviroment each members.
 
-## Done! How to deliver to our clident?
+## Done! How to deliver to our client?
 
 Upload server or compress dirctory EXCEPT "/dev", "/.git", "/.gitignore".
-That's only it.
 
 Happy coding!
