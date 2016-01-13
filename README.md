@@ -47,19 +47,21 @@ gulp compiles when you everytime save files under /dev/jade or /dev/scss, and de
                 * _navigation.scss
                 * _buttons.scss
         * /bower_components
-          * (will be installed components by bower)
+            * (will be installed components by bower)
+        * /node_modules
+            * (This directory is made after "npm install" then you never need to care here.)
     * index.html
     * /about
         * index.html
     * access.html
     * contact.html
     * /common
-      * /css
-          * app.css
-          * app.css.map
-      * /js
-          * (copy js files from /dev/bower_components)
-          * (place js files here directly if you need to)
+        * /css
+            * app.css
+            * app.css.map
+        * /js
+            * (copy js files from /dev/bower_components)
+            * (place js files here directly if you need to)
     * /products
         * index.html
 
@@ -108,5 +110,32 @@ Our process neccesity,
 
 1. Deploy to staging server with Git.
 1. Paths inside HTML files must be started from site_root, like "/common/js/jquery.js".
+
+## Use bower
+
+1. cd dev
+1. mv bower-template.json bower.json
+1. bower install SOMETHING --save, or --save-dev
+
+Then, update gulpfile.js var copy_js, var copy_css
+
+    var copy_js = [
+      'bower_components/swipebox/src/js/jquery.swipebox.min.js',
+      'bower_components/slick-carousel/slick/slick.min.js',
+      'bower_components/lightbox2/dist/js/lightbox.min.js',
+    ];
+    
+    var copy_css = [
+      'bower_components/slick-carousel/slick/slick.css',
+      'bower_components/slick-carousel/slick/slick-theme.css',
+      'bower_components/lightbox2/dist/css/lightbox.css'
+    ];
+
+This system for develop with multi developers. When someone do "bower install SOMETHING --save", the guy have to commit and push bower.json. Then other guys pull this bower.json, and do "bower update". This process need to maintain and keep frontend enviroment each members.
+
+## Done! How to deliver to our clident?
+
+Upload server or compress dirctory EXCEPT "/dev", "/.git", "/.gitignore".
+That's only it.
 
 Happy coding!
