@@ -1,3 +1,5 @@
+** THIS REPOSITORY WILL BE NO LONGER UPDATED **
+
 # jade-scss-gulp-template-2015
 
 ## License
